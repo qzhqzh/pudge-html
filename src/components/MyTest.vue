@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
+    <h1>我是 test</h1>
     <h1>{{ msg }}</h1>
-    <p> here is a test page, are you ready?
+    <p>
     </p>
   </div>
 </template>
@@ -9,9 +10,15 @@
 <script>
 export default {
   name: 'MyTest',
-  props: {
-    msg: String
-  }
+  // props: {
+  //   msg: String
+  // }
+
+    data () {
+        return {
+            msg: '我是 src/components裏的test.vue'
+        }
+    }
 }
 </script>
 

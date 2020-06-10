@@ -1,23 +1,41 @@
 <template>
   <div class="hello">
-    <h1>我是 test</h1>
+    <h1>我是 Axios</h1>
     <h1>{{ msg }}</h1>
-    <p>
-    </p>
+
+    <ul id="example-1">
+      <li v-for="item in lst">
+        {{ item.created_at }}
+      </li>
+    </ul>
+
   </div>
 </template>
 
 <script>
+
+import axios from "axios"
+
 export default {
-  name: 'MyTest',
+  name: 'Axios',
   // props: {
   //   msg: String
   // }
-
     data () {
         return {
-            msg: '我是 src/components裏的test.vue'
+            msg: '我是 src/components裏的axios.vue',
+            lst: []
         }
+    },
+    mounted: function () {
+        axios.get('http://106.53.58.248:8080/api/demo/basic-demo')
+            .then((response) => {
+                this.lst = response.data.results;
+                alert(this.$baseUrl);
+            })
+            .catch(function (error) {
+                console.log(error)
+            })
     }
 }
 </script>

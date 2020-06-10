@@ -1,20 +1,21 @@
 <template>
   <div class="hello">
+    <h1>我是 notFind</h1>
     <h1>{{ msg }}</h1>
-    <p> here is a test page, are you ready?
+    <p>
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MyTest',
+  name: 'notFind',
   // props: {
   //   msg: String
   // }
     data () {
         return {
-            msg: '我是 src/components裏的test.vue'
+            msg: '对不起，匹配不到对应资源,我是notFind.vue'
         }
     }
 }
