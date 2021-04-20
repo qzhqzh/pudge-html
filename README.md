@@ -1,4 +1,4 @@
-# pudge-web
+# html
 
 ## Project setup
 ```
