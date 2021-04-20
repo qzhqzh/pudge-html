@@ -8,10 +8,6 @@ import DetailNote from '@/components/note/DetailNote'
 import EditNote from '@/components/note/EditNote'
 
 
-
-
-
-
 import Author from '@/components/Author'
 import TestTb from '@/components/TestTb'
 import Vditor from '@/components/Vditor'
@@ -29,49 +25,55 @@ export default new Router({
             path: '/author',
             component: Author
         },
-        {
-            path: '/note/add',
-            component: AddNote
-        },
-        {
-            path: '/note/:id',
-            component: DetailNote
-        },
-        {
-            path: '/note/:id/edit',
-            component: EditNote
-        },
-        {
-            path: '/note',
-            component: Note
-        },
-        {
-            path: '/testtb',
-            component: TestTb
-        },
-        {
-            path: '/vditor',
-            component: Vditor
-        },
+        // {
+        //     path: '/author',
+        //     component: Author
+        // },
+        // {
+        //     path: '/note/add',
+        //     component: AddNote
+        // },
+        // {
+        //     path: '/note/:id',
+        //     component: DetailNote
+        // },
+        // {
+        //     path: '/note/:id/edit',
+        //     component: EditNote
+        // },
+        // {
+        //     path: '/note',
+        //     component: Note
+        // },
+        // {
+        //     path: '/testtb',
+        //     component: TestTb
+        // },
+        // {
+        //     path: '/vditor',
+        //     component: Vditor
+        // },
         // {
         //     path: '/',
         //     name: 'index',
         //     component: Hello
         // },
-        {
-            path: '/hello',
-            component: Hello
-        },
-        {
-            path: '/test',
-            name: 'MyTest',
-            component: MyTest
-        },
-        {
-            path: '/axios',
-            name: 'Axios',
-            component: Axios
-        },
+        // {
+        //     path: '/hello',
+        //     component: Hello
+        // },
+        // {
+        //     path: '/test',
+        //     name: 'MyTest',
+        //     component: MyTest
+        // },
+        // {
+        //     path: '/axios',
+        //     name: 'Axios',
+        //     component: Axios
+        // },
+
+        // 匹配错误的页面
         {
             path: '*',
             name: 'notFind',
